@@ -4,10 +4,10 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    @question = params[:question]
+    @question = params[:question].downcase
 
     case @question
-    when 'I am going to work'
+    when 'i am going to work'
       @answer = 'Great!'
     when /.*\?$/
       @answer = "Silly question, get dressed and go to work!"
