@@ -6,10 +6,11 @@ class QuestionsController < ApplicationController
   def answer
     @question = params[:question].downcase
 
-    case @question
-    when 'i am going to work'
+    if @question.blank?
+      @answer = "I can't hear you!"
+    elsif @uestion == "i am going to work"
       @answer = 'Great!'
-    when /.*\?$/
+    elsif @question.end_with?("?")
       @answer = "Silly question, get dressed and go to work!"
     else
       @answer = "I don't care, get dressed and go to work!"
