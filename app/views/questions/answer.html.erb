@@ -1,3 +1,13 @@
-<h3><%= @question %></h3>
+<div class="answer">
+  <h1 class="app-title">Stupid Coaching</h1>
 
-<p><%= @answer %></p>
+  <div class="question citation-box">
+    <p class="citation"><%= @question.capitalize %></p>
+    <p class="person-name citation">-You</p>
+  </div>
+
+  <div class="coach citation-box">
+    <p class="citation"><%= @answer %></p>
+    <p class="person-name citation">-Your coach</p>
+  </div>
+</div>
