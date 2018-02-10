@@ -1,10 +1,14 @@
-<div class="ask">
+<div class="question">
   <h1 class="app-title">Stupid Coaching</h1>
 
-  <div class="user-input">
-    <form action="/answer">
-      <input type="text" name="question" placeholder="Say something to your coach !">
-      <input type="submit" value="Ask!">
-    </form>
-  </div>
+  <form action="/answer" style="margin-top: 35px;">
+    <div class="input-group mb-3" style="width: 450px;">
+      <input type="text" name="question" class="form-control" placeholder="Say something to your coach !">
+      <div class="input-group-append">
+        <input class="btn btn-primary" type="submit" value="Ask!">
+      </div>
+    </div>
+  </form>
+
+
 </div>
