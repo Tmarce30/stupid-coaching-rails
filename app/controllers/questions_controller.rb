@@ -7,6 +7,7 @@ class QuestionsController < ApplicationController
     @question = params[:question].downcase
 
     if @question.blank?
+      @question = '🤐'
       @answer = "I can't hear you!"
     elsif @uestion == "i am going to work"
       @answer = 'Great!'
